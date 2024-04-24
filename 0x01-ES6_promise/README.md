@@ -33,6 +33,6 @@
 ---
 
 **Repo:**
-- [GitHub repository: alx-backend-javascript](https://github.com/yourusername/alx-backend-javascript)
+- [GitHub repository: alx-backend-javascript](https://github.com/ElvisMw/alx-backend-javascript/tree/main/0x01-ES6_promise)
 - **Directory:** 0x01-ES6_promise
 
