@@ -1,5 +1,4 @@
 // Create a promise that rejects with an error
 export default function uploadPhoto(filename) {
-    return Promise.reject(new Error(`${filename} cannot be processed`));
-  }
-  
+  return Promise.reject(new Error(`${filename} cannot be processed`));
+}
