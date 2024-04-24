@@ -1,4 +1,4 @@
-import { uploadPhoto, createUser } from './utils.js';
+import { uploadPhoto, createUser } from './utils';
 
 // Handle profile signup using multiple promises
 export default function handleProfileSignup() {
