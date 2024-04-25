@@ -1,4 +1,4 @@
-import HolbertonClass from './8-hbtn_class.js';
+import HolbertonClass from './8-hbtn_class';
 
 // Represents a Holberton student
 export class StudentHolberton {

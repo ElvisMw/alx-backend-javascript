@@ -1,5 +1,3 @@
-import Currency from './3-currency.js';
-
 // Represents a pricing with amount and currency
 export default class Pricing {
   // Constructor to initialize amount and currency

@@ -1,4 +1,4 @@
-import ClassRoom from './0-classroom.js';
+import ClassRoom from './0-classroom';
 
 // Function to create and initialize three classrooms
 export default function initializeRooms() {
