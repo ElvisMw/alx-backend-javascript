@@ -1,4 +1,4 @@
-import HolbertonClass from "./8-hbtn_class.js";
+import HolbertonClass from './8-hbtn_class.js';
 
 // Represents a Holberton student
 export class StudentHolberton {
@@ -35,5 +35,5 @@ export const listOfStudents = [
   new StudentHolberton('John', 'Doe', class2020),
   new StudentHolberton('Albert', 'Clinton', class2019),
   new StudentHolberton('Donald', 'Bush', class2019),
-  new StudentHolberton('Jason', 'Sandler', class2019)
+  new StudentHolberton('Jason', 'Sandler', class2019),
 ];

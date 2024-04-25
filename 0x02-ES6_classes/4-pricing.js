@@ -1,4 +1,4 @@
-import Currency from "./3-currency.js";
+import Currency from './3-currency.js';
 
 // Represents a pricing with amount and currency
 export default class Pricing {

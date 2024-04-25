@@ -1,4 +1,4 @@
-import Building from "./5-building.js";
+import Building from './5-building.js';
 
 // Represents a sky-high building, extending from Building
 export default class SkyHighBuilding extends Building {

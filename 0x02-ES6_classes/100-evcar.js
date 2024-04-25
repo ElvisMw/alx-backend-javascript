@@ -1,4 +1,4 @@
-import Car from "./10-car.js";
+import Car from './10-car.js';
 
 // Represents an electric vehicle
 const _range = Symbol('range');
