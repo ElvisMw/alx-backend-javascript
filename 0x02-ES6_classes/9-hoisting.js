@@ -1,3 +1,4 @@
+// Import HolbertonClass from './8-hbtn_class' module
 import HolbertonClass from './8-hbtn_class';
 
 // Represents a Holberton student
