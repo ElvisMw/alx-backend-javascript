@@ -12,7 +12,7 @@ export default class Building {
 
   // Abstract method for evacuation warning message
   evacuationWarningMessage() {
-    // Ensure 'this' keyword is used
+    // eslint-disable-next-line class-methods-use-this
     throw new Error('Class extending Building must override evacuationWarningMessage');
   }
 }
