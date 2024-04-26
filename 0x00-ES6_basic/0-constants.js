@@ -1,21 +1,21 @@
 // Function to return a string indicating preference for const
-export function taskFirst () {
+export function taskFirst() {
   // Variable declaration using const
-  const task = 'I prefer const when I can.'
-  return task
+  const task = 'I prefer const when I can.';
+  return task;
 }
 
 // Function to return a string indicating okay status
-export function getLast () {
-  return ' is okay'
+export function getLast() {
+  return ' is okay';
 }
 
 // Function to concatenate strings indicating preference for let
-export function taskNext () {
+export function taskNext() {
   // Variable declaration using let
-  let combination = 'But sometimes let'
+  let combination = 'But sometimes let';
   // Concatenating the result of getLast() function
-  combination += getLast()
+  combination += getLast();
 
-  return combination
+  return combination;
 }
