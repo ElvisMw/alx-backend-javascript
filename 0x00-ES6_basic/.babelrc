@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current" // Target Node.js current version
+      },
+      "modules": "auto" // Automatically detect module system (e.g., CommonJS, ES modules)
+    }]
+  ],
+  "plugins": [
+    // Add any additional Babel plugins here if needed
+  ]
+}
+
