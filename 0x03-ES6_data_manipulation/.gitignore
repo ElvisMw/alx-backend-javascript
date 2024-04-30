@@ -1,0 +1,3 @@
+# gitignore template for node modules
+
+node_modules/
