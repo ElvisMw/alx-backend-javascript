@@ -7,10 +7,9 @@ const app = http.createServer();
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 
 /**
- * Counts the number of students in the database.
+ * Counts the students in a CSV data file.
  * @param {String} dataPath The path to the CSV data file.
- * @returns {Promise<String>} A report of the number of students in each group.
- * @throws {Error} If the database cannot be loaded.
+ * @author JamesMaxx <https://github.com/JamesMaxx>
  */
 const countStudents = (dataPath) => new Promise((resolve, reject) => {
   if (!dataPath) {
@@ -65,17 +64,8 @@ const countStudents = (dataPath) => new Promise((resolve, reject) => {
   }
 });
 
-/**
- * Object containing route handlers for the server.
- * @type {Object[]}
- */
 const SERVER_ROUTE_HANDLERS = [
   {
-    /**
-     * Route handler for the root route.
-     * @param {http.IncomingMessage} req The HTTP request object.
-     * @param {http.ServerResponse} res The HTTP response object.
-     */
     route: '/',
     handler(_, res) {
       const responseText = 'Hello Holberton School!';
@@ -87,11 +77,6 @@ const SERVER_ROUTE_HANDLERS = [
     },
   },
   {
-    /**
-     * Route handler for the "/students" route.
-     * @param {http.IncomingMessage} req The HTTP request object.
-     * @param {http.ServerResponse} res The HTTP response object.
-     */
     route: '/students',
     handler(_, res) {
       const responseParts = ['This is the list of our students'];
@@ -117,12 +102,6 @@ const SERVER_ROUTE_HANDLERS = [
   },
 ];
 
-/**
- * Event handler for the 'request' event of the HTTP server.
- * Routes the request to the appropriate handler based on the URL.
- * @param {http.IncomingMessage} req The HTTP request object.
- * @param {http.ServerResponse} res The HTTP response object.
- */
 app.on('request', (req, res) => {
   for (const routeHandler of SERVER_ROUTE_HANDLERS) {
     if (routeHandler.route === req.url) {
@@ -132,9 +111,6 @@ app.on('request', (req, res) => {
   }
 });
 
-/**
- * Starts the HTTP server and listens on the specified port and host.
- */
 app.listen(PORT, HOST, () => {
   process.stdout.write(`Server listening at -> http://${HOST}:${PORT}\n`);
 });

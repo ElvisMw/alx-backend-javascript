@@ -6,10 +6,9 @@ const PORT = 1245;
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 
 /**
- * Count the number of students in the database file.
- * @param {string} dataPath - The path to the database file.
- * @returns {Promise<string>} - A report of the number of students in each group.
- * @throws {Error} - If the database cannot be loaded.
+ * Counts the students in a CSV data file.
+ * @param {String} dataPath The path to the CSV data file.
+ * @author JamesMaxx <https://github.com/JamesMaxx>
  */
 const countStudents = (dataPath) => new Promise((resolve, reject) => {
   if (!dataPath) {
@@ -64,12 +63,10 @@ const countStudents = (dataPath) => new Promise((resolve, reject) => {
   }
 });
 
-// Set up the root route
 app.get('/', (_, res) => {
   res.send('Hello Holberton School!');
 });
 
-// Set up the /students route
 app.get('/students', (_, res) => {
   const responseParts = ['This is the list of our students'];
 
@@ -92,7 +89,6 @@ app.get('/students', (_, res) => {
     });
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server listening on PORT ${PORT}`);
 });

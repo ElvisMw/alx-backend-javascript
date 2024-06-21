@@ -3,3 +3,4 @@ package.json
 .eslintrc.js
 database.csv
 node_modules/
+babel.config.js
