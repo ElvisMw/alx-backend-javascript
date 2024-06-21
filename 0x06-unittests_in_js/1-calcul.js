@@ -11,19 +11,16 @@
  * returns a rounded number.
  */
 const calculateNumber = (type, a, b) => {
-  // Perform the specified mathematical operation based on the type
+  const roundedA = Math.round(a);
+  const roundedB = Math.round(b);
+
   if (type === 'SUM') {
-    // Round the numbers to the nearest whole number and add them
-    return Math.round(a) + Math.round(b);
+    return roundedA + roundedB;
   } else if (type === 'SUBTRACT') {
-    // Round the numbers to the nearest whole number and subtract b from a
-    return Math.round(a) - Math.round(b);
+    return roundedA - roundedB;
   } else if (type === 'DIVIDE') {
-    // Check if b is 0; if so, return 'Error'
-    // Otherwise, round both numbers and divide them
-    return Math.round(b) === 0 ? 'Error' : Math.round(a) / Math.round(b);
+    return roundedB === 0 ? 'Error' : roundedA / roundedB;
   }
-  // Default to returning 0 if the type is not recognized
   return 0;
 };
 
