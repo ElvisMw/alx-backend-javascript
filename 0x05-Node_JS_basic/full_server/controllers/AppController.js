@@ -1,4 +1,3 @@
-
 /**
  * Class representing the AppController.
  * This controller handles the root route '/' and sends a simple greeting message.
