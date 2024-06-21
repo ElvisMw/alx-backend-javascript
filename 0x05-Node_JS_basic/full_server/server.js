@@ -1,10 +1,3 @@
-/**
- * This script creates a simple HTTP server using Express framework
- * that listens on port 1245 and handles all routes defined in the routes folder.
- *
- * @author JamesMaxx <https://github.com/JamesMaxx>
- */
-
 // Importing the Express module
 const express = require('express');
 

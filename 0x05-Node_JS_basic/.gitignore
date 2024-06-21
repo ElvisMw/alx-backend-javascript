@@ -2,3 +2,4 @@ package-lock.json
 package.json
 .eslintrc.js
 database.csv
+node_modules/
